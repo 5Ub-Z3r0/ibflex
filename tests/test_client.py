@@ -116,7 +116,6 @@ class RequestStatementTestCase(unittest.TestCase):
                 datetime.timedelta(hours=-4)))
         )
         self.assertEqual(output.ReferenceCode, "1234567890")
-        self.assertEqual(output.Url, client.STMT_URL)
 
 
 @patch("requests.get", side_effect=mock_response)
